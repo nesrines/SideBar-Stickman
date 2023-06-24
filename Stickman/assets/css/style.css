@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#StickMan {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: center;
+  margin: 50px 20px;
+  width: 160px;
+  height: 360px;
+  overflow: hidden;
+}
+#StickMan img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#Bubble {
+  left: 160px;
+}
+
+#Bubble2 {
+  left: 360px;
+}
+
+#Bubble, #Bubble2 {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 160px;
+  height: 200px;
+}
+#Bubble .image, #Bubble2 .image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#Bubble .image p, #Bubble2 .image p {
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  transform: translate(-36%, -36%);
+  text-align: center;
+  font-size: 11px;
+}
+#Bubble .image img, #Bubble2 .image img {
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#Bubble .buttons, #Bubble2 .buttons {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+#Timer {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 8%;
+}
+
+#Circle {
+  background-image: url(https://st2.depositphotos.com/1005574/7713/v/600/depositphotos_77135357-stock-illustration-abstract-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(0, 0, 0, 0.3333333333);
+  border-radius: 50%;
+}
+
+.buttons-for-dance {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 16%;
+}/*# sourceMappingURL=style.css.map */
