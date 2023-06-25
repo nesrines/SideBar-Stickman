@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -16,25 +19,27 @@ header .logo {
   width: 150px;
 }
 header .icons a {
+  text-decoration: none;
   background-color: #f45369;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 17px;
   width: 32px;
   height: 32px;
   border-radius: 8px;
 }
-header .icons a img {
-  width: 22px;
-  height: 22px;
+header .icons .active {
+  background-color: #ffffff;
+  color: #f45369;
+  border: 1px solid #f45369;
 }
 
-@media (max-width: 780px) {
-  header {
-    height: 65px;
-  }
-}
 @media (max-width: 986px) {
   header {
     height: 80px;
+  }
+}
+@media (max-width: 780px) {
+  header {
+    height: 65px;
   }
 }/*# sourceMappingURL=style.css.map */
